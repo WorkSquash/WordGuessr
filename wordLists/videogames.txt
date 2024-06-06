@@ -1,100 +1,333 @@
-Assassin's Creed
-Call of Duty
-The Legend of Zelda
-Super Mario Bros.
-Halo
-Final Fantasy
-Minecraft
-Grand Theft Auto
-Overwatch
-Fortnite
-World of Warcraft
-League of Legends
-Pokémon
-Resident Evil
-God of War
-Metal Gear Solid
-Uncharted
-Fallout
-Doom
-Mass Effect
-The Elder Scrolls
-Red Dead Redemption
-Sonic the Hedgehog
-Street Fighter
-Tekken
-Mortal Kombat
-Gears of War
-The Witcher
-Battlefield
-Destiny
-Diablo
-Dark Souls
-Bioshock
-Borderlands
-Animal Crossing
-Splatoon
-StarCraft
-Half-Life
-Portal
-Super Smash Bros.
-Tomb Raider
-Fortnite
+A Plague Tale: Innocence
+Ace Combat 7: Skies Unknown
+Age of Empires II
+Age of Mythology
+Age of Wonders: Planetfall
+Alan Wake
+Alien vs Predator
+Alien: Isolation
+Among Us
 Apex Legends
-Dead Space
-Far Cry
-Kingdom Hearts
-LittleBigPlanet
-Monster Hunter
-NieR: Automata
-The Sims
-Fire Emblem
-Forza Horizon
-Ghost of Tsushima
-Horizon Zero Dawn
-Minecraft Dungeons
-No Man's Sky
-Persona
-Rainbow Six Siege
-Rocket League
-Sea of Thieves
-Splinter Cell
-Star Wars Battlefront
-Super Metroid
-The Last of Us
-Titanfall
-Watch Dogs
-Xenoblade Chronicles
-Yakuza
+Ark: Survival Evolved
+Assassin's Creed II
+Assassin's Creed IV: Black Flag
+Assassin's Creed Odyssey
+Assassin's Creed Origins
 Assassin's Creed Valhalla
-Call of Duty: Warzone
-Cyberpunk 2077
-Demon's Souls
-Dragon Age
-Elder Scrolls Online
-FIFA
-Fortnite: Save the World
-Genshin Impact
-League of Legends: Wild Rift
-Marvel's Spider-Man
-NBA 2K
-Outriders
-Phasmophobia
-Pokemon Sword and Shield
-Resident Evil Village
-Star Wars Jedi: Fallen Order
-Valorant
-Warframe
-XCOM
-Zelda: Breath of the Wild
-A Way Out
-Age of Empires
-Apex Legends
-Baldur's Gate
+Baldur's Gate II: Shadows of Amn
+Baldur's Gate III
+Banjo-Kazooie
+Bastion
+Batman: Arkham Asylum
+Batman: Arkham City
+BattleBlock Theater
+Battlefield 1
+Battlefield 1942
+Battlefield 3
+Battlefield 4
+Battlefield Bad Company 2
+Battlefield V
+Bayonetta
+BioShock
+BioShock 2
+BioShock Infinite
+Black Mesa
+Bloodborne
+Bloodstained: Ritual of the Night
+Borderlands
+Borderlands 2
 Borderlands 3
-Civilization
-Counter-Strike
+Broken Age
+Brothers: A Tale of Two Sons
+Call of Duty: Black Ops
+Call of Duty: Modern Warfare
+Call of Duty: Modern Warfare 2
+Call of Duty: Warzone
+Call of Duty: World at War
+Celeste
+Celestial Command
+Cities: Skylines
+Civilization VI
+Clue
+Control
+Crash Bandicoot N. Sane Trilogy
+Crypt of the NecroDancer
+Crusader Kings III
+Cuphead
+Cyberpunk 2077
+Dark Souls
+Dark Souls II
+Dark Souls III
+Darkest Dungeon
+Dead by Daylight
+Dead Cells
+Dead Space
+Dead Space 2
+Death Stranding
+Deathloop
+Demon’s Souls
+Destiny
 Destiny 2
-Doom Eternal
-Far Cry 6
-Fortnite: Battle Royale
+Deus Ex: Human Revolution
+Devil May Cry 5
+Diablo II
+Diablo III
+Disco Elysium
+Divinity: Original Sin
+Divinity: Original Sin II
+DOOM (2016)
+DOOM Eternal
+Dragon Age: Inquisition
+Dragon Quest XI
+Dragon's Dogma: Dark Arisen
+Dreamfall Chapters
+Dying Light
+Dynasty Warriors 8
+Elite Dangerous
+Enter the Gungeon
+Escape from Tarkov
+Europa Universalis IV
+Fable II
+Factorio
+Fallout 4
+Fallout: New Vegas
+Far Cry 3
+Far Cry 4
+Far Cry 5
+Far Cry Primal
+Fez
+FIFA 21
+Final Fantasy IX
+Final Fantasy VII
+Final Fantasy VII Remake
+Final Fantasy X
+Final Fantasy XIV
+Final Fantasy XV
+Firewatch
+For Honor
+Fortnite
+Forza Horizon 4
+Frostpunk
+FTL: Faster Than Light
+Gears 5
+Gears of War 4
+Geometry Dash
+Genshin Impact
+Ghost of Tsushima
+Ghost Recon: Wildlands
+God of War (2018)
+Godfall
+Grand Theft Auto IV
+Grand Theft Auto V
+Grounded
+Guild Wars 2
+H1Z1
+Hades
+Half-Life 2
+Halo 3
+Halo Infinite
+Hellblade: Senua's Sacrifice
+Hitman 2
+Hitman 3
+Hollow Knight
+Honkai Impact 3rd
+Honkai: Star Rail
+Hotline Miami
+Horizon Zero Dawn
+Hunt: Showdown
+Hyper Light Drifter
+Immortals Fenyx Rising
+Injustice 2
+Inside
+Jak and Daxter: The Precursor Legacy
+Journey
+Just Cause 3
+Just Cause 4
+Jurassic World Evolution
+Katana Zero
+Kenshi
+Kerbal Space Program
+Kingdom Come: Deliverance
+Kingdom Hearts III
+Layers of Fear
+Lethal Company
+League of Legends
+League of Legends: Wild Rift
+Left 4 Dead 2
+Legend of Grimrock
+Lego City Undercover
+Lego Marvel Super Heroes
+Life is Strange
+Life is Strange 2
+Little Nightmares
+LittleBigPlanet 3
+Mad Max
+Mafia III
+Marvel's Avengers
+Marvel's Spider-Man: Miles Morales
+Mass Effect 2
+Mass Effect 3
+Mass Effect: Andromeda
+Max Payne 3
+Medal of Honor: Above and Beyond
+Metal Gear Solid V: The Phantom Pain
+Metro 2033
+Metro Exodus
+Middle-earth: Shadow of Mordor
+Middle-earth: Shadow of War
+Minecraft
+Mirror's Edge Catalyst
+Monster Hunter Rise
+Monster Hunter: World
+Mortal Kombat 11
+N++
+Nier: Automata
+Nier Replicant
+Nioh 2
+No Man's Sky
+Octopath Traveler
+Ori and the Blind Forest
+Ori and the Will of the Wisps
+Outlast
+Outward
+Overwatch
+Oxygen Not Included
+Payday 2
+Persona 5
+Phasmophobia
+Phoenix Wright: Ace Attorney
+Pillars of Eternity
+Planet Coaster
+Planetside 2
+Plants vs. Zombies
+Plants vs. Zombies: Garden Warfare
+Plants vs. Zombies: Garden Warfare 2
+Plants vs. Zombies 2: It's about Time
+Plants vs. Zombies: Battle for Neighbourville
+Plague Inc: Evolved
+Pokemon Sword and Shield
+Portal
+Portal 2
+Prey
+Prey (2017)
+Project Zomboid
+Psychonauts 2
+PUBG: Battlegrounds
+Pummel Party
+Quantum Break
+Quake Champions
+Rage 2
+Rainbow Six Siege
+Ratchet & Clank
+Rayman Legends
+Red Dead Redemption
+Red Dead Redemption 2
+Red Faction: Guerrilla
+Remnant: From the Ashes
+Resident Evil 2 (2019)
+Resident Evil 3
+Resident Evil 4
+Resident Evil 7: Biohazard
+Resident Evil 8: Village
+Returnal
+RimWorld
+Rise of the Tomb Raider
+Risk of Rain 2
+Rocket Arena
+Rocket League
+Rust
+Salt and Sanctuary
+Sea of Thieves
+Sekiro: Shadows Die Twice
+Serious Sam 4
+Shadow of the Colossus
+Shadow Tactics: Blades of the Shogun
+Shadow Warrior 2
+Shovel Knight
+Sid Meier's Civilization V
+Sid Meier's Civilization VI
+Satisfactory
+Sekiro: Shadows Die Twice
+Sins of a Solar Empire
+Skullgirls
+Slay the Spire
+Slime Rancher
+Smite
+South Park: The Fractured but Whole
+Spider-Man (2018)
+Splatoon 2
+Spore
+Spyro Reignited Trilogy
+Star Citizen
+Star Wars Battlefront II
+Star Wars Jedi: Fallen Order
+Star Wars: Squadrons
+Stardew Valley
+Stellaris
+Street Fighter V
+Subnautica
+Subnautica: Below Zero
+Super Hot
+Super Mario Odyssey
+Super Meat Boy
+Super Smash Bros. Ultimate
+Surviving Mars
+System Shock 2
+Tetris Effect
+The Binding of Isaac: Rebirth
+The Crew 2
+The Division 2
+The Elder Scrolls IV: Oblivion
+The Elder Scrolls V: Skyrim
+The Evil Within 2
+The Forest
+The Last of Us
+The Last of Us Part II
+The Legend of Zelda: Breath of the Wild
+The Legend of Zelda: Ocarina of Time
+The Legend of Zelda: Tears of the Kingdom
+The Long Dark
+The Outer Worlds
+The Sims 4
+The Stanley Parable
+The Surge 2
+The Talos Principle
+The Walking Dead
+The Witcher 2: Assassins of Kings
+The Witcher 3: Wild Hunt
+Thief
+Titan Quest
+Titanfall 2
+Tomb Raider (2013)
+Total War: Three Kingdoms
+Totally Accurate Battle Simulator
+Tropico 6
+Two Point Hospital
+Undertale
+Untitled Goose Game
+Uncharted 4: A Thief's End
+Valheim
+Valorant
+Vampyr
+War Thunder
+Warframe
+Warhammer: Vermintide 2
+Watch Dogs
+Watch Dogs 2
+Watch Dogs: Legion
+We Happy Few
+Wolfenstein II: The New Colossus
+Wolcen: Lords of Mayhem
+World of Tanks
+World of Warcraft
+World War Z
+Wreckfest
+XCOM 2
+XCOM: Enemy Unknown
+Yakuza 0
+Yakuza Kiwami
+Yakuza Kiwami 2
+Yakuza: Like a Dragon
+Zenless Zone Zero
+Zombie Army 4: Dead War
+ZombiU
