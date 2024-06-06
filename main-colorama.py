@@ -4,7 +4,8 @@ import os
 import random
 import re
 import unicodedata
-from colored import colored, cprint
+from colorama import init, Fore
+init()
 
 def get_local_version():
     # Read the local version number from the version.txt file
@@ -16,36 +17,36 @@ def get_local_version():
 
 def get_remote_version():
     # Get the latest version number from the GitHub repository
-    repo_url = 'https://raw.githubusercontent.com/WorkSquash/WordGuessR/master/version.txt'
+    repo_url = 'https://raw.githubusercontent.com/WorkSquash/WordGuessr/master/version.txt'
     try:
         response = requests.get(repo_url)
         response.raise_for_status()
         remote_version = response.text.strip()
         return remote_version
     except requests.exceptions.HTTPError as http_err:
-        cprint(f"HTTP error occurred: {http_err}", fore_256="red")
+        print(Fore.RED + f"HTTP error occurred: {http_err}")
     except requests.exceptions.ConnectionError:
-        cprint("Error: Could not connect to the internet.", fore_256="red")
+        print(Fore.RED + "Error: Could not connect to the internet.")
     except requests.exceptions.Timeout:
-        cprint("Error: The request timed out.", fore_256="red")
+        print(Fore.RED + "Error: The request timed out.")
     except requests.exceptions.RequestException as err:
-        cprint(f"An error occurred: {err}", fore_256="red")
+        print(Fore.RED + f"An error occurred: {err}")
     return None
 
 def check_version():
     local_version = get_local_version()
     if not local_version:
-        cprint("Local version file not found.", fore_256="red")
+        print(Fore.RED + "Local version file not found.")
         return
     remote_version = get_remote_version()
     if not remote_version:
-        cprint("Could not retrieve remote version.", fore_256="red")
+        print(Fore.RED + "Could not retrieve remote version.")
         return
     if local_version != remote_version:
         print(f"A new version is available: {remote_version}. You have version: {local_version}.")
         update = input("Do you want to update? (y/n): ").strip().lower()
         if update == 'y':
-            repo_page_url = 'https://github.com/WorkSquash/WordGuessr/releases'
+            repo_page_url = 'https://github.com/WorkSqush/WordGuessr'
             webbrowser.open(repo_page_url)
         else:
             print("You chose not to update.")
@@ -69,7 +70,7 @@ def load_words(category):
     filename = f'wordLists/{category}.txt'
     filename = sanitize_filename(filename)
     if not os.path.isfile(filename):
-        cprint(f"File {filename} does not exist.", fore_256="red")
+        print(Fore.RED + f"File {filename} does not exist.")
         return []
     with open(filename, 'r', encoding='utf-8') as file:
         words = [line.strip().upper() for line in file]
@@ -78,11 +79,11 @@ def load_words(category):
 def read_readme(filename):
     # Read and print the contents of the readme file
     if not os.path.isfile(filename):
-        cprint(f"File {filename} does not exist.", fore_256="red")
+        print(Fore.RED + f"File {filename} does not exist.")
         return
     with open(filename, 'r', encoding='utf-8') as file:
         readme_content = file.read()
-    print(f'{readme_content}\n')
+    print(readme_content + "\n")
 
 def choose_category(categories):
     # Let the player choose a category
@@ -111,7 +112,7 @@ def play_game():
     words = load_words(category)
     
     if not words:
-        cprint("No words available for this category.", fore_256="red")
+        print(Fore.RED + "No words available for this category.")
         return
     
     word = choose_word(words)
@@ -120,7 +121,7 @@ def play_game():
     guessed_letters = []
     tries = 10
     
-    print("Let's play Hangman!")
+    print("Let's play WordGuessr!")
     print(f"You have {tries} tries left.")
     display_progress(word, guessed_letters)
     print("\n")
@@ -130,7 +131,7 @@ def play_game():
         try:
             guess = guess.encode('utf-8').decode('utf-8')
         except UnicodeDecodeError:
-            print("Invalid input. Please enter a valid UTF-8 encoded character.")
+            print(Fore.RED + "Invalid input. Please enter a valid UTF-8 encoded character.")
             continue
         if len(guess) == 1 and (guess.isalnum() or guess.isspace()):
             if guess in guessed_letters:
@@ -159,13 +160,12 @@ def play_game():
             print("\n")
     
     if guessed:
-        cprint(f"Congratulations, you guessed the word '{word}'!", fore_256="green")
+        print(Fore.GREEN + f"Congratulations, you guessed the word '{word}'!")
     else:
         print('Sorry you ran out of tries.')
-        cprint(f'The word was {word}', fore_256="red")
+        print(Fore.RED + f'The word was {word}')
     
-    input("Press any key to close the game...")
+    input(Fore.RESET + "Press any key to close the game...")
 
 if __name__ == "__main__":
     play_game()
-
