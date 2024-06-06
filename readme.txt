@@ -1,5 +1,5 @@
 
-Welcome to the Hangman Game!
+Welcome to WordGuessr!
 You will choose a category and try to guess the word by suggesting letters or the whole word.
 You have a limited number of tries, so choose wisely.
 Good luck!
