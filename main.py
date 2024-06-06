@@ -16,7 +16,7 @@ def get_local_version():
 
 def get_remote_version():
     # Get the latest version number from the GitHub repository
-    repo_url = 'https://raw.githubusercontent.com/WorkSquash/WordGuessR/main/version.txt'
+    repo_url = 'https://raw.githubusercontent.com/WorkSquash/WordGuessR/master/version.txt'
     try:
         response = requests.get(repo_url)
         response.raise_for_status()
@@ -45,7 +45,7 @@ def check_version():
         print(f"A new version is available: {remote_version}. You have version: {local_version}.")
         update = input("Do you want to update? (y/n): ").strip().lower()
         if update == 'y':
-            repo_page_url = 'https://github.com/WorkSquash/WordGuessr'
+            repo_page_url = 'https://github.com/WorkSquash/WordGuessr/releases'
             webbrowser.open(repo_page_url)
         else:
             print("You chose not to update.")
