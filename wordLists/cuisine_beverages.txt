@@ -97,16 +97,22 @@ Honey
 Honeydew
 Hot dogs
 Ice cream
+Iced tea
 Kale
 Lemon
+Lemonade
 Lettuce
 Mango
+Margarita
 Milk
+Mint
+Mojito
 Mushrooms
 Oats
-Olive oil
+Oil
 Onion
 Orange
+Orange juice
 Pasta
 Peanut butter
 Peas
@@ -118,6 +124,8 @@ Pumpkin
 Quinoa
 Radish
 Raspberries
+Red wine
+Rum
 Salmon
 Sausage
 Shrimp
@@ -127,9 +135,14 @@ Strawberries
 Sugar
 Sweet potatoes
 Tea
+Tequila
 Tomato
 Tuna
 Turkey
+Vodka
+Water
 Watermelon
 Wheat
+White wine
+Whiskey
 Yogurt
