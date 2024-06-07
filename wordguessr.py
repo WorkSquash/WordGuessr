@@ -177,7 +177,7 @@ def play_game():
         cprint('Sorry you ran out of tries.', 'red')
         cprint(f'The word was {word}', 'red')
     
-    input("Press any key to close the game...")
+    os.system('pause')
 
 if __name__ == "__main__":
     play_game()
