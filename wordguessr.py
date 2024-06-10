@@ -5,11 +5,16 @@ import random
 import re
 import unicodedata
 from colored import *
+from datetime import datetime, timedelta
+
+VERSION_CHECK_INTERVAL = timedelta(hours=24)
+VERSION_FILE = 'version.txt'
+VERSION_TIMESTAMP_FILE = 'version_timestamp.txt'
 
 def get_local_version():
-    if not os.path.isfile('version.txt'):
+    if not os.path.isfile(VERSION_FILE):
         return None
-    with open('version.txt', 'r', encoding='utf-8') as file:
+    with open(VERSION_FILE, 'r', encoding='utf-8') as file:
         local_version = file.read().strip()
     return local_version
 
@@ -30,15 +35,31 @@ def get_remote_version():
         cprint(f"An error occurred: {err}", 'red')
     return None
 
+def update_version_timestamp():
+    with open(VERSION_TIMESTAMP_FILE, 'w', encoding='utf-8') as file:
+        file.write(datetime.now().isoformat())
+
+def should_check_version():
+    if not os.path.isfile(VERSION_TIMESTAMP_FILE):
+        return True
+    with open(VERSION_TIMESTAMP_FILE, 'r', encoding='utf-8') as file:
+        timestamp = datetime.fromisoformat(file.read().strip())
+    return datetime.now() - timestamp > VERSION_CHECK_INTERVAL
+
 def check_version():
+    if not should_check_version():
+        return
+
     local_version = get_local_version()
     if not local_version:
         cprint("Local version file not found.", 'red')
         return
+
     remote_version = get_remote_version()
     if not remote_version:
         cprint("Could not retrieve remote version.", 'red')
         return
+
     if local_version != remote_version:
         cprint(f"A new version is available: {remote_version}. You have version: {local_version}.", 'yellow')
         update = input("Do you want to update? (y/n): ").strip().lower()
@@ -50,7 +71,10 @@ def check_version():
     else:
         cprint("You have the latest version.", 'green')
 
+    update_version_timestamp()
+
 def readme(filename):
+    filename = sanitize_filename(filename)
     if not os.path.isfile(filename):
         cprint(f"File {filename} does not exist.", 'red')
         return
@@ -154,11 +178,11 @@ def play_game():
                 if all(letter in guessed_letters or not letter.isalpha() for letter in word):
                     guessed = True
         elif len(guess) == len(word):
-            if guess != word:
+            if guess == word:
+                guessed = True
+            else:
                 cprint(f"{guess} is not the word.", 'red')
                 tries -= 1
-            else:
-                guessed = True
         else:
             cprint("Not a valid guess.", 'red')
         
@@ -177,7 +201,7 @@ def play_game():
         cprint('Sorry you ran out of tries.', 'red')
         cprint(f'The word was {word}', 'red')
     
-    input("Press any key to close the game...")
+    os.system('pause')
 
 if __name__ == "__main__":
     play_game()

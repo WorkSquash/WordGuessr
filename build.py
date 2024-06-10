@@ -19,5 +19,4 @@ PyInstaller.__main__.run([
     'wordguessr.spec',
     '--distpath',
     build_dir,
-    '--noconfirm'
 ])
