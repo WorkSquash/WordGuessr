@@ -10,13 +10,15 @@ os.makedirs(build_dir, exist_ok=True)
 
 # Copy assets to the build directory, replacing existing files
 shutil.copytree('wordLists', os.path.join(build_dir, 'wordLists'), dirs_exist_ok=True)
+shutil.copytree('languages', os.path.join(build_dir, 'languages'), dirs_exist_ok=True)
 shutil.copy2('categories.txt', build_dir)
 shutil.copy2('version.txt', build_dir)
-shutil.copy2('readme.txt', build_dir)
+shutil.copy2('wordguessr.ico', build_dir)
+shutil.copy2('language.ini', build_dir)
 
 # Run PyInstaller to build the executable
 PyInstaller.__main__.run([
     'wordguessr.spec',
-    '--distpath',
+    '--distpath', 
     build_dir,
 ])

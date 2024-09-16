@@ -1,0 +1,10 @@
+# Ignore Translation file
+language.ini
+languages/*.json
+# Ignore Version and credits files
+version.txt
+version_timestamp.txt
+credits.txt
+# Ignore other files
+*.log
+*.tmp

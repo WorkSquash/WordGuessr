@@ -1,10 +1,22 @@
 # -*- mode: python ; coding: utf-8 -*-
 
+import os
+
+# Define base path for the build directory
+base_path = os.getcwd()
+
 a = Analysis(
     ['wordguessr.py'],
-    pathex=[],
+    pathex=[base_path],
     binaries=[],
-    datas=[],
+    datas=[
+        ('wordLists/*', 'wordLists'),
+        ('languages/*', 'languages'),
+        ('categories.txt', '.'),
+        ('version.txt', '.'),
+        ('wordguessr.ico', '.'),
+        ('language.ini', '.'),
+    ],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -13,6 +25,7 @@ a = Analysis(
     noarchive=False,
     optimize=0,
 )
+
 pyz = PYZ(a.pure)
 
 exe = EXE(
@@ -34,5 +47,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['wordguessr.ico'],
+    icon='wordguessr.ico',
 )
