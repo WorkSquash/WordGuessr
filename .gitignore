@@ -1,10 +1,8 @@
-# Ignore Translation file
-language.ini
-languages/*.json
-# Ignore Version and credits files
-version.txt
+wordguessr.spec
+wordguessr.ico
+# Ignore version_timestamp and dev scripts
 version_timestamp.txt
-credits.txt
+tools/*
 # Ignore other files
 *.log
 *.tmp

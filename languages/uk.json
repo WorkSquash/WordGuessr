@@ -1,0 +1,22 @@
+{
+    "translation_file_not_found": "Файл перекладу не знайдено: {}",
+    "language_ini_not_found": "Файл language.ini не знайдено. Створюється новий.",
+    "choose_category": "Оберіть категорію:",
+    "category_choice_prompt": "Введіть номер категорії:",
+    "no_words_available": "Немає доступних слів у цій категорії.",
+    "invalid_choice": "Некоректний вибір. Спробуйте ще раз.",
+    "welcome_message": "Ласкаво просимо в гру WordGuessR!",
+    "tries_left": "Залишилося спроб: {}",
+    "guess_prompt": "Введіть букву або слово:",
+    "already_guessed": "Ви вже вгадали букву '{}'.",
+    "not_in_word": "Буква '{}' відсутня у слові.",
+    "good_guess": "Добре вгадано: '{}'.",
+    "not_the_word": "Це не слово: '{}'!",
+    "invalid_guess": "Некоректна спроба.",
+    "guess_whole_word_warning": "Обережно! Ви намагаєтеся вгадати ціле слово.",
+    "congratulations": "Вітаємо! Ви вгадали слово '{}'.",
+    "out_of_tries": "Ви використали всі спроби! Загадане слово: '{}'.",
+    "play_again": "Хочете грати ще раз? (y/n)",
+    "choose_new_category": "Хочете обрати нову категорію? (y/n)",
+    "thanks_for_playing": "Дякуємо за гру!"
+}

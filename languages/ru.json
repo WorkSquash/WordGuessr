@@ -1,0 +1,22 @@
+{
+    "translation_file_not_found": "Файл перевода не найден: {}",
+    "language_ini_not_found": "Файл language.ini не найден. Создаётся новый.",
+    "choose_category": "Выберите категорию:",
+    "category_choice_prompt": "Введите номер категории:",
+    "no_words_available": "Нет доступных слов в этой категории.",
+    "invalid_choice": "Некорректный выбор. Попробуйте снова.",
+    "welcome_message": "Добро пожаловать в игру WordGuessR!",
+    "tries_left": "Осталось попыток: {}",
+    "guess_prompt": "Введите букву или слово:",
+    "already_guessed": "Вы уже загадали букву '{}'.",
+    "not_in_word": "Буква '{}' отсутствует в слове.",
+    "good_guess": "Хорошая догадка: '{}'.",
+    "not_the_word": "Это не слово: '{}'!",
+    "invalid_guess": "Некорректная догадка.",
+    "guess_whole_word_warning": "Осторожно! Вы пытаетесь угадать целое слово.",
+    "congratulations": "Поздравляем! Вы угадали слово '{}'.",
+    "out_of_tries": "Вы исчерпали все попытки! Загаданное слово: '{}'.",
+    "play_again": "Хотите сыграть снова? (y/n)",
+    "choose_new_category": "Хотите выбрать новую категорию? (y/n)",
+    "thanks_for_playing": "Спасибо за игру!"
+}

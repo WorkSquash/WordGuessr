@@ -1,0 +1,22 @@
+{
+    "translation_file_not_found": "翻訳ファイルが見つかりません: {}",
+    "language_ini_not_found": "language.iniファイルが見つかりません。新しいファイルを作成します。",
+    "choose_category": "カテゴリーを選択してください:",
+    "category_choice_prompt": "カテゴリーの番号を入力してください:",
+    "no_words_available": "このカテゴリーには利用可能な単語がありません。",
+    "invalid_choice": "無効な選択です。もう一度試してください。",
+    "welcome_message": "ゲームWordGuessRへようこそ！",
+    "tries_left": "残りの試行回数: {}",
+    "guess_prompt": "文字または単語を入力してください:",
+    "already_guessed": "すでに文字 '{}' を推測しました。",
+    "not_in_word": "文字 '{}' は単語に含まれていません。",
+    "good_guess": "良い推測です: '{}'。",
+    "not_the_word": "これは単語ではありません: '{}'！",
+    "invalid_guess": "無効な推測です。",
+    "guess_whole_word_warning": "注意！単語全体を推測しようとしています。",
+    "congratulations": "おめでとうございます！単語 '{}' を推測しました。",
+    "out_of_tries": "すべての試行回数を使い果たしました！答えは '{}' です。",
+    "play_again": "もう一度プレイしますか？ (y/n)",
+    "choose_new_category": "新しいカテゴリーを選びますか？ (y/n)",
+    "thanks_for_playing": "ゲームをしていただきありがとうございます！"
+}

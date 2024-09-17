@@ -4,9 +4,8 @@ import random
 import re
 import unicodedata
 from colored import cprint
-import configparser  # Import configparser to read ini files
+import configparser
 
-# Global variables for translations
 TRANSLATIONS = {}
 LANGUAGE_FILE = 'language.ini'
 LANGUAGE_DIR = 'languages/'
@@ -25,7 +24,7 @@ def load_translation(language_code):
 
 def get_translation(key, *args):
     """Get the translation for a given key and format it with arguments."""
-    translation = TRANSLATIONS.get(key, key)  # Fallback to key if not found
+    translation = TRANSLATIONS.get(key, key)
     if args:
         translation = translation.format(*args)
     return translation
@@ -33,16 +32,34 @@ def get_translation(key, *args):
 def read_language_ini():
     """Read the language.ini file to determine the default language."""
     config = configparser.ConfigParser()
+    
     if not os.path.isfile(LANGUAGE_FILE):
         cprint(get_translation("language_ini_not_found"), 'yellow')
+        
         with open(LANGUAGE_FILE, 'w', encoding='utf-8') as file:
             file.write('[Settings]\nlanguage=en\n')
+            file.write('\n[Languages]\n')
+            file.write('en = English\n')
+            file.write('es = Spanish\n')
+            file.write('fr = French\n')
+            file.write('de = German\n')
+            file.write('it = Italian\n')
+            file.write('pt = Portuguese\n')
+            file.write('hu = Hungarian\n')
+            file.write('ru = Russian\n')
+            file.write('zh = Chinese\n')
+            file.write('ja = Japanese\n')
+            file.write('uk = Ukrainian\n')
+        
         return 'en'
 
     config.read(LANGUAGE_FILE)
     
-    if 'Settings' in config:
-        return config['Settings'].get('language', 'en')
+    if 'Settings' in config and 'language' in config['Settings']:
+        lang = config['Settings']['language']
+        if lang not in config['Languages']:
+            return 'en'
+        return lang
 
     return 'en'
 
@@ -87,7 +104,6 @@ def choose_category(categories):
             choice = int(input(get_translation("category_choice_prompt")).strip())
             if 1 <= choice <= len(categories):
                 selected_category = categories[choice - 1]
-                # Check if words are available in the chosen category
                 if load_words(selected_category):
                     return selected_category
                 else:
@@ -110,39 +126,43 @@ def play_game():
     """Play the WordGuessR game."""
     language_code = read_language_ini()
     load_translation(language_code)
-    
+
     categories = load_categories('categories.txt')
-    
+
     if not categories:
         cprint(get_translation("no_categories_available"), 'red')
         return
-    
+
+    previous_category = None
+
     while True:
-        category = choose_category(categories)
+        if previous_category is None or input(get_translation("choose_new_category")).strip().lower() == 'y':
+            category = choose_category(categories)
+            if not category: continue
+            previous_category = category
+        else: category = previous_category
+
         words = load_words(category)
-        
         if not words:
             cprint(get_translation("no_words_available_for_category"), 'red')
             continue
-        
+
         word = choose_word(words)
         word_length = len(word)
-        
-        # Adjust the number of tries based on the length of the word
+
         tries = max(8, 15 - word_length)
-        
+
         guessed = False
         guessed_letters = []
-        
+
         cprint(get_translation("welcome_message"), 'blue')
-        # Change this line to include the tries left translation
         cprint(get_translation("tries_left", tries), fore_rgb=[252, 144, 3])
         display_progress(word, guessed_letters)
         print("\n")
-        
+
         while not guessed and tries > 0:
             guess = input(get_translation("guess_prompt")).upper()
-            
+
             if len(guess) == 1 and guess.isalnum():
                 if guess in guessed_letters:
                     cprint(get_translation("already_guessed", guess), 'yellow')
@@ -163,27 +183,22 @@ def play_game():
                     tries -= 1
             else:
                 cprint(get_translation("invalid_guess"), 'red')
-            
+
             if not guessed:
-                # Change this line as well
                 cprint(get_translation("tries_left", tries), fore_rgb=[138, 138, 138])
                 display_progress(word, guessed_letters)
                 print("\n")
-            
+
             if tries < 10 and len(guess) == len(word) and guess != word:
                 cprint(get_translation("guess_whole_word_warning"), 'red')
-        
+
         if guessed:
             cprint(get_translation("congratulations", word), 'green')
         else:
             cprint(get_translation('out_of_tries', word), 'red')
-        
+
         play_again = input(get_translation("play_again")).strip().lower()
-        if play_again == 'y':
-            if input(get_translation("choose_new_category")).strip().lower() == 'y':
-                continue
-            else:
-                break
+        if play_again == 'y': continue  
         else:
             cprint(get_translation("thanks_for_playing"), 'yellow')
             break

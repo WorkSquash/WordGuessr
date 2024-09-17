@@ -1,0 +1,22 @@
+{
+    "translation_file_not_found": "未找到翻译文件: {}",
+    "language_ini_not_found": "未找到 language.ini 文件。正在创建新文件。",
+    "choose_category": "请选择类别：",
+    "category_choice_prompt": "请输入类别编号：",
+    "no_words_available": "该类别没有可用的单词。",
+    "invalid_choice": "无效的选择。请再试一次。",
+    "welcome_message": "欢迎来到 WordGuessR 游戏！",
+    "tries_left": "剩余尝试次数：{}",
+    "guess_prompt": "请输入字母或单词：",
+    "already_guessed": "您已经猜过字母 '{}'。",
+    "not_in_word": "字母 '{}' 不在单词中。",
+    "good_guess": "好猜测：'{}'。",
+    "not_the_word": "这不是单词：'{}'！",
+    "invalid_guess": "无效的猜测。",
+    "guess_whole_word_warning": "小心！您正在尝试猜测整个单词。",
+    "congratulations": "恭喜！您猜到了单词 '{}'。",
+    "out_of_tries": "您的所有尝试次数都用完了！答案是 '{}'。",
+    "play_again": "要再玩一次吗？ (y/n)",
+    "choose_new_category": "要选择新类别吗？ (y/n)",
+    "thanks_for_playing": "感谢您参与游戏！"
+}
