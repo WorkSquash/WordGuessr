@@ -6,5 +6,5 @@ WordGuessR is a word guessing game where players guess letters or the entire wor
 
 - Guess letters or the entire word
 - Multiple categories to choose from
-- Supports multiple languages (En, Pt, Es, Hu)
+- Supports multiple languages (support list found in the language.ini file)
 - Version checking and updates
